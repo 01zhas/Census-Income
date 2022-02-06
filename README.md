@@ -7,3 +7,43 @@
 * Строим и оцениваем простую логистическую регрессионную модель
 * Строим и оцениваем модель XGBoost
 * Сравниваем модели между собой
+
+# Графики
+### График дохода 
+![alt text](https://github.com/01zhas/Census-Income/blob/master/img/income.png?raw=true)
+
+Как мы можем заметить наши данные несбалансированность, поэтому для правильной оценки точности модели мы будем сравнивать ее с DummyClassifier
+
+### График образования
+![alt text](https://github.com/01zhas/Census-Income/blob/master/img/edu.png?raw=true)
+
+### График возраста
+![alt text](https://github.com/01zhas/Census-Income/blob/master/img/age.png?raw=true)
+
+### График отношения между всеми парами переменных
+![alt text](https://github.com/01zhas/Census-Income/blob/master/img/pairplot.png?raw=true)
+
+### Матрица корреляции
+![alt text](https://github.com/01zhas/Census-Income/blob/master/img/pairplot.png?raw=true)
+
+По матрице можно понять что на доход больше всего влияет сколько лет образование у человека
+
+# Предсказывающие модели 
+Для данного проекта я использовал логическую регрессионную модель, а также библиотеку XGBoost
+
+Логистическая регрессия является одним из статистических методов классификации с использованием линейного дискриминанта Фишера
+
+XGBoost — алгоритм машинного обучения, основанный на дереве поиска решений и использующий фреймворк градиентного бустинга.
+
+Для поиска оптимальных параметров я использовал [Optuna]("https://optuna.org")
+
+### История оптимизации логистической регрессии
+![alt text](https://github.com/01zhas/Census-Income/blob/master/img/lr.png?raw=true)
+
+### История оптимизации XGBoost
+![alt text](https://github.com/01zhas/Census-Income/blob/master/img/xgb.png?raw=true)
+
+# Оценка моделей
+![alt text](https://github.com/01zhas/Census-Income/blob/master/img/accuracy.png?raw=true)
+
+Точность логистической регрессии и XGBoost выше чем у DummyClassifier. Это говорит о том что наши модели обученный правильно. Также мы можем что по итогу точность XGBoost выше на 2% чем у логистической регрессии
