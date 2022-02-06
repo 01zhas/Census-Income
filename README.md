@@ -24,7 +24,7 @@
 ![alt text](https://github.com/01zhas/Census-Income/blob/master/img/pairplot.png?raw=true)
 
 ### Матрица корреляции
-![alt text](https://github.com/01zhas/Census-Income/blob/master/img/pairplot.png?raw=true)
+![alt text](https://github.com/01zhas/Census-Income/blob/master/img/corr_matrix.png?raw=true)
 
 По матрице можно понять что на доход больше всего влияет сколько лет образование у человека
 
